@@ -22,18 +22,25 @@ https://github.com/mzezin/icu-test.git
 ```
 2. Install dependencies (```full-icu```)
 ```
-npm run i
+npm i
 ```
 3. Run ```node``` w/o icu support
 ```
 npm run no-icu
 ```
-3. Run ```node``` with icu support
+#### Result:
+```javascript
+{ a: 1000000, ru: '1,000,000', en: '1,000,000' }
+```
+
+4. Run ```node``` with icu support
 ```
 npm run full-icu
-
 ```
-
+#### Result:
+```javascript
+{ a: 1000000, ru: '1 000 000', en: '1,000,000' }
+```
 
 ## Source
 https://nodejs.org/dist/latest-v8.x/docs/api/intl.html    
